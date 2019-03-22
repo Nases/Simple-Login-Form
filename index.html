@@ -33,33 +33,33 @@
         <!-- Modal content-->
         <div class="modal-content">
           <div class="login-card">
-            <!-- Login (giriş) Form Sayfası -->
-            <form id="gy_form" class="col-lg-12" method="post">
+            <!-- Login Form -->
+            <form id="login_form" class="col-lg-12" method="post">
               <!-- Logo -->
-              <div class="col-lg-12 logo-kapsul">
-                <div class="logo-kapsul-bg"></div>
+              <div class="col-lg-12 logo-capsule">
+                <div class="logo-capsule-bg"></div>
                 <div class="form-header-content">
                   <img
                     width="200"
                     class="logo"
                     src="assets/boostingen_elo_boost_logo.png"
                     draggable="false"
-                    alt="Boostingen Elo Boost"
+                    alt="Logo"
                   />
                   <h4>Login</h4>
                 </div>
               </div>
               <!-- Giriş İnput -->
-              <div class="form-space bgGray gy_inputs">
+              <div class="form-space bgGray login_inputs">
                 <div class="group">
                   <span class="form-icon"
                     ><i class="fas fa-envelope" aria-hidden="true"></i
                   ></span>
                   <input
-                    id="gy_email"
+                    id="login_email"
                     class="form-input-special"
                     type="email"
-                    name="gy_email"
+                    name="login_email"
                     placeholder="E-mail"
                     required
                   />
@@ -68,17 +68,17 @@
                 <div class="group">
                   <span class="form-icon"><i class="fas fa-lock"></i></span>
                   <input
-                    id="gy_parola"
+                    id="login_password"
                     class="form-input-special"
                     type="password"
-                    name="gy_parola"
+                    name="login_password"
                     placeholder="Password"
                     required
                   />
                 </div>
                 <!-- Giriş Yap Buton -->
                 <button
-                  id="gy_submit_button"
+                  id="login_submit_button"
                   type="submit"
                   class="btn btn-primary form-control"
                 >
@@ -110,9 +110,9 @@
         <div class="modal-content">
           <div class="login-card">
             <!-- Kayıt Form Sayfası -->
-            <form id="ko_form" class="col-lg-12" method="post">
-              <div class="col-lg-12 logo-kapsul">
-                <div class="logo-kapsul-bg"></div>
+            <form id="register_form" class="col-lg-12" method="post">
+              <div class="col-lg-12 logo-capsule">
+                <div class="logo-capsule-bg"></div>
                 <div class="form-header-content">
                   <img
                     width="200"
@@ -125,16 +125,16 @@
                 </div>
               </div>
               <!-- Kayıt Form Input -->
-              <div class="form-space bgGray ko_inputs">
+              <div class="form-space bgGray register_inputs">
                 <div class="group">
                   <span class="form-icon"
                     ><i class="fas fa-envelope" aria-hidden="true"></i
                   ></span>
                   <input
-                    id="ko_email"
+                    id="register_email"
                     type="email"
                     class="form-input-special"
-                    name="ko_email"
+                    name="register_email"
                     placeholder="E-mail"
                     required
                   />
@@ -143,10 +143,10 @@
                 <div class="group">
                   <span class="form-icon"><i class="fas fa-lock"></i></span>
                   <input
-                    id="ko_parola1"
+                    id="register_password1"
                     type="password"
                     class="form-input-special"
-                    name="ko_parola1"
+                    name="register_password1"
                     placeholder="Password"
                     required
                   />
@@ -155,17 +155,17 @@
                 <div class="group">
                   <span class="form-icon"><i class="fas fa-lock"></i></span>
                   <input
-                    id="ko_parola2"
+                    id="register_password2"
                     type="password"
                     class="form-input-special"
-                    name="ko_parola2"
+                    name="register_password2"
                     placeholder="Password (repeat)"
                     required
                   />
                 </div>
                 <!-- Kayıt Ol Buton -->
                 <button
-                  id="ko_submit_button"
+                  id="register_submit_button"
                   type="submit"
                   class="btn btn-primary form-control"
                 >
@@ -193,9 +193,9 @@
         <div class="modal-content">
           <div class="login-card">
             <!-- Sifre Hatirlat Form Sayfası -->
-            <form id="fp_form" class="col-lg-12" method="post">
-              <div class="col-lg-12 logo-kapsul">
-                <div class="logo-kapsul-bg"></div>
+            <form id="forgot_password_form" class="col-lg-12" method="post">
+              <div class="col-lg-12 logo-capsule">
+                <div class="logo-capsule-bg"></div>
                 <div class="form-header-content">
                   <img
                     width="200"
@@ -208,23 +208,23 @@
                 </div>
               </div>
               <!-- Şifre Hatırlat Email İnput -->
-              <div class="form-space bgGray fp_inputs">
+              <div class="form-space bgGray forgot_password_inputs">
                 <div class="group">
                   <span class="form-icon"
                     ><i class="fas fa-envelope" aria-hidden="true"></i
                   ></span>
                   <input
-                    id="fp_email"
+                    id="forgot_password_email"
                     type="email"
                     class="form-input-special"
-                    name="fp_email"
+                    name="forgot_password_email"
                     placeholder="E-mail"
                     required
                   />
                 </div>
                 <!-- Şifremi Hatırlat Buton -->
                 <button
-                  id="fp_submit_button"
+                  id="forgot_password_submit_button"
                   type="submit"
                   class="btn btn-primary form-control"
                 >
