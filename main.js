@@ -1,5 +1,6 @@
-// Kaydol - Şifre Unuttum Linkleri Arası Geçiş
+// Toggle between modals
 $(document).ready(function() {
+  $("#userRegister").modal("show");
   $(".registerLink").click(function(e) {
     $("#userLogin").modal("hide");
     $("#userRegister").modal("show");

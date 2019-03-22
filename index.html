@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <div id="userLogin" class=" animated fadeIn" role="dialog">
+    <div id="userLogin" class="modal animated fadeIn" role="dialog">
       <div class="modal-dialog modal-dialog-centered">
         <!-- Modal content-->
         <div class="modal-content">
@@ -121,7 +121,7 @@
                     draggable="false"
                     alt="Boostingen Elo Boost"
                   />
-                  <h4>Kayıt Ol</h4>
+                  <h4>Register</h4>
                 </div>
               </div>
               <!-- Kayıt Form Input -->
@@ -135,7 +135,7 @@
                     type="email"
                     class="form-input-special"
                     name="ko_email"
-                    placeholder="E-posta adresiniz"
+                    placeholder="E-mail"
                     required
                   />
                 </div>
@@ -147,7 +147,7 @@
                     type="password"
                     class="form-input-special"
                     name="ko_parola1"
-                    placeholder="Şifreniz"
+                    placeholder="Password"
                     required
                   />
                 </div>
@@ -159,7 +159,7 @@
                     type="password"
                     class="form-input-special"
                     name="ko_parola2"
-                    placeholder="Şifreniz (tekrar)"
+                    placeholder="Password (repeat)"
                     required
                   />
                 </div>
@@ -167,16 +167,16 @@
                 <button
                   id="ko_submit_button"
                   type="submit"
-                  class="btn btn-success form-control"
+                  class="btn btn-primary form-control"
                 >
-                  <span>Kayıt Ol</span>
+                  <span>Register</span>
                 </button>
                 <!-- Zaten Hesap Var Link -->
                 <div class="forgot-and-create">
                   <a
                     class="alreadyHaveAccountLink"
                     href="javascript:void('alreadyHaveAccountLink');"
-                    >Hesabınız mı var? Giriş Yap</a
+                    >Already have an account? Login</a
                   >
                 </div>
               </div>
@@ -204,7 +204,7 @@
                     draggable="false"
                     alt="Boostingen Elo Boost"
                   />
-                  <h4>Şifremi Unuttum</h4>
+                  <h4>Forgot Password</h4>
                 </div>
               </div>
               <!-- Şifre Hatırlat Email İnput -->
@@ -218,7 +218,7 @@
                     type="email"
                     class="form-input-special"
                     name="fp_email"
-                    placeholder="E-posta adresiniz"
+                    placeholder="E-mail"
                     required
                   />
                 </div>
@@ -235,7 +235,7 @@
                   <a
                     class="alreadyHaveAccountLink"
                     href="javascript:void('alreadyHaveAccountLink');"
-                    >Hesabınız mı var? Giriş Yap</a
+                    >Already have an account? Login</a
                   >
                 </div>
               </div>
@@ -245,6 +245,11 @@
         </div>
       </div>
     </div>
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
       integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
