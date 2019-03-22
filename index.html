@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Login Form</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:500,600"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div id="userLogin" class=" animated fadeIn" role="dialog">
+      <div class="modal-dialog modal-dialog-centered">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="login-card">
+            <!-- Login (giriş) Form Sayfası -->
+            <form id="gy_form" class="col-lg-12" method="post">
+              <!-- Logo -->
+              <div class="col-lg-12 logo-kapsul">
+                <div class="logo-kapsul-bg"></div>
+                <div class="form-header-content">
+                  <img
+                    width="200"
+                    class="logo"
+                    src="assets/boostingen_elo_boost_logo.png"
+                    draggable="false"
+                    alt="Boostingen Elo Boost"
+                  />
+                  <h4>Login</h4>
+                </div>
+              </div>
+              <!-- Giriş İnput -->
+              <div class="form-space bgGray gy_inputs">
+                <div class="group">
+                  <span class="form-icon"
+                    ><i class="fas fa-envelope" aria-hidden="true"></i
+                  ></span>
+                  <input
+                    id="gy_email"
+                    class="form-input-special"
+                    type="email"
+                    name="gy_email"
+                    placeholder="E-mail"
+                    required
+                  />
+                </div>
+                <!-- Şifre İnput Giriş-->
+                <div class="group">
+                  <span class="form-icon"><i class="fas fa-lock"></i></span>
+                  <input
+                    id="gy_parola"
+                    class="form-input-special"
+                    type="password"
+                    name="gy_parola"
+                    placeholder="Password"
+                    required
+                  />
+                </div>
+                <!-- Giriş Yap Buton -->
+                <button
+                  id="gy_submit_button"
+                  type="submit"
+                  class="btn btn-primary form-control"
+                >
+                  <span>Login</span>
+                </button>
+                <!-- Şifremi Unuttum ve Kaydol Linkleri -->
+                <div class="forgot-and-create">
+                  <a
+                    class="forgotPasswordLink"
+                    href="javascript:void('forgotPasswordLink');"
+                    >Forgot Password</a
+                  >
+                  <a
+                    class="registerLink"
+                    href="javascript:void('registerLink');"
+                    >Register</a
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="userRegister" class="modal animated fadeIn" role="dialog">
+      <div class="modal-dialog modal-dialog-centered">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="login-card">
+            <!-- Kayıt Form Sayfası -->
+            <form id="ko_form" class="col-lg-12" method="post">
+              <div class="col-lg-12 logo-kapsul">
+                <div class="logo-kapsul-bg"></div>
+                <div class="form-header-content">
+                  <img
+                    width="200"
+                    class="logo"
+                    src="assets/boostingen_elo_boost_logo.png"
+                    draggable="false"
+                    alt="Boostingen Elo Boost"
+                  />
+                  <h4>Kayıt Ol</h4>
+                </div>
+              </div>
+              <!-- Kayıt Form Input -->
+              <div class="form-space bgGray ko_inputs">
+                <div class="group">
+                  <span class="form-icon"
+                    ><i class="fas fa-envelope" aria-hidden="true"></i
+                  ></span>
+                  <input
+                    id="ko_email"
+                    type="email"
+                    class="form-input-special"
+                    name="ko_email"
+                    placeholder="E-posta adresiniz"
+                    required
+                  />
+                </div>
+                <!-- Kayıt Form Şifre Input -->
+                <div class="group">
+                  <span class="form-icon"><i class="fas fa-lock"></i></span>
+                  <input
+                    id="ko_parola1"
+                    type="password"
+                    class="form-input-special"
+                    name="ko_parola1"
+                    placeholder="Şifreniz"
+                    required
+                  />
+                </div>
+                <!-- Kayıt Form Şifre-Tekrarı Input -->
+                <div class="group">
+                  <span class="form-icon"><i class="fas fa-lock"></i></span>
+                  <input
+                    id="ko_parola2"
+                    type="password"
+                    class="form-input-special"
+                    name="ko_parola2"
+                    placeholder="Şifreniz (tekrar)"
+                    required
+                  />
+                </div>
+                <!-- Kayıt Ol Buton -->
+                <button
+                  id="ko_submit_button"
+                  type="submit"
+                  class="btn btn-success form-control"
+                >
+                  <span>Kayıt Ol</span>
+                </button>
+                <!-- Zaten Hesap Var Link -->
+                <div class="forgot-and-create">
+                  <a
+                    class="alreadyHaveAccountLink"
+                    href="javascript:void('alreadyHaveAccountLink');"
+                    >Hesabınız mı var? Giriş Yap</a
+                  >
+                </div>
+              </div>
+            </form>
+            <!-- ##Kayıt Form  Sayfası Bitis -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="forgotPassword" class="modal animated fadeIn" role="dialog">
+      <div class="modal-dialog modal-dialog-centered">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="login-card">
+            <!-- Sifre Hatirlat Form Sayfası -->
+            <form id="fp_form" class="col-lg-12" method="post">
+              <div class="col-lg-12 logo-kapsul">
+                <div class="logo-kapsul-bg"></div>
+                <div class="form-header-content">
+                  <img
+                    width="200"
+                    class="logo"
+                    src="assets/boostingen_elo_boost_logo.png"
+                    draggable="false"
+                    alt="Boostingen Elo Boost"
+                  />
+                  <h4>Şifremi Unuttum</h4>
+                </div>
+              </div>
+              <!-- Şifre Hatırlat Email İnput -->
+              <div class="form-space bgGray fp_inputs">
+                <div class="group">
+                  <span class="form-icon"
+                    ><i class="fas fa-envelope" aria-hidden="true"></i
+                  ></span>
+                  <input
+                    id="fp_email"
+                    type="email"
+                    class="form-input-special"
+                    name="fp_email"
+                    placeholder="E-posta adresiniz"
+                    required
+                  />
+                </div>
+                <!-- Şifremi Hatırlat Buton -->
+                <button
+                  id="fp_submit_button"
+                  type="submit"
+                  class="btn btn-primary form-control"
+                >
+                  <span>Şifremi Hatırlat</span>
+                </button>
+                <!-- Zaten Hesap Var Link -->
+                <div class="forgot-and-create">
+                  <a
+                    class="alreadyHaveAccountLink"
+                    href="javascript:void('alreadyHaveAccountLink');"
+                    >Hesabınız mı var? Giriş Yap</a
+                  >
+                </div>
+              </div>
+            </form>
+            <!-- ##Sifre Hatirlat Form Bitis -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+      integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

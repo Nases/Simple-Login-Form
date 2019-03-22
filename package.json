@@ -1,0 +1,34 @@
+{
+  "name": "simple-login-form",
+  "version": "1.0.0",
+  "description": "Simple login - register - forgot password form",
+  "main": "index.js",
+  "scripts": {
+    "save": "git add -A && git commit -m 'Hi' && git push origin master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nases/Simple-Login-Form.git"
+  },
+  "keywords": [
+    "Simple",
+    "Login",
+    "Register",
+    "Forgot",
+    "Password",
+    "Form"
+  ],
+  "author": "Hasan Sefa Ozalp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nases/Simple-Login-Form/issues"
+  },
+  "homepage": "https://github.com/Nases/Simple-Login-Form#readme",
+  "dependencies": {
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "browser-sync": "^2.26.3"
+  }
+}
