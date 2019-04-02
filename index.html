@@ -24,10 +24,27 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
+    <div class="middle">
+      <button
+        type="button"
+        class="btn btn-success"
+        data-toggle="modal"
+        data-target="#userLogin"
+      >
+        <i class="fas fa-sign-in-alt"></i> Login
+      </button>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target="#userRegister"
+      >
+        <i class="fas fa-user-plus"></i> Register
+      </button>
+    </div>
     <div id="userLogin" class="modal animated fadeIn" role="dialog">
       <div class="modal-dialog modal-dialog-centered">
         <!-- Modal content-->
@@ -39,13 +56,7 @@
               <div class="col-lg-12 logo-capsule">
                 <div class="logo-capsule-bg"></div>
                 <div class="form-header-content">
-                  <img
-                    width="200"
-                    class="logo"
-                    src="assets/boostingen_elo_boost_logo.png"
-                    draggable="false"
-                    alt="Logo"
-                  />
+                  <i class="fas fa-rocket fa-4x cWhite form-logo"></i>
                   <h4>Login</h4>
                 </div>
               </div>
@@ -116,13 +127,7 @@
               <div class="col-lg-12 logo-capsule">
                 <div class="logo-capsule-bg"></div>
                 <div class="form-header-content">
-                  <img
-                    width="200"
-                    class="logo"
-                    src="assets/boostingen_elo_boost_logo.png"
-                    draggable="false"
-                    alt="Boostingen Elo Boost"
-                  />
+                  <i class="fas fa-rocket fa-4x cWhite form-logo"></i>
                   <h4>Register</h4>
                 </div>
               </div>
@@ -200,13 +205,7 @@
               <div class="col-lg-12 logo-capsule">
                 <div class="logo-capsule-bg"></div>
                 <div class="form-header-content">
-                  <img
-                    width="200"
-                    class="logo"
-                    src="assets/boostingen_elo_boost_logo.png"
-                    draggable="false"
-                    alt="Boostingen Elo Boost"
-                  />
+                  <i class="fas fa-rocket fa-4x cWhite form-logo"></i>
                   <h4>Forgot Password</h4>
                 </div>
               </div>
@@ -231,7 +230,7 @@
                   type="submit"
                   class="btn btn-primary form-control"
                 >
-                  <span>Şifremi Hatırlat</span>
+                  <span>Send Password</span>
                 </button>
                 <!-- Already have an account link -->
                 <div class="forgot-and-create">
