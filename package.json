@@ -10,25 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/Nases/Simple-Login-Form.git"
   },
-  "keywords": [
-    "Simple",
-    "Login",
-    "Register",
-    "Forgot",
-    "Password",
-    "Form"
-  ],
+  "keywords": ["Simple", "Login", "Register", "Forgot", "Password", "Form"],
   "author": "Hasan Sefa Ozalp",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Nases/Simple-Login-Form/issues"
   },
-  "homepage": "https://github.com/Nases/Simple-Login-Form#readme",
-  "dependencies": {
-    "gulp-sass": "^4.0.2"
-  },
-  "devDependencies": {
-    "gulp": "^4.0.0",
-    "browser-sync": "^2.26.3"
-  }
+  "homepage": "https://github.com/Nases/Simple-Login-Form#readme"
 }
